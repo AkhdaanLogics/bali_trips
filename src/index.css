@@ -1,18 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
+* {
+  scroll-behavior: smooth;
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  color-scheme: light;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  margin: 0;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #0f172a;
+  background:
+    radial-gradient(
+      1200px 600px at 10% -10%,
+      rgba(20, 184, 166, 0.15),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 500px at 90% 0%,
+      rgba(14, 116, 144, 0.12),
+      transparent 55%
+    ),
+    #f6f4f0;
+}
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fraunces", "Times New Roman", serif;
+  letter-spacing: -0.02em;
+}

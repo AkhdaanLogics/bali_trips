@@ -1,18 +1,12 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import "leaflet/dist/leaflet.css";
 
-import './index.css'
-import Navbar from './Navbar.jsx'
-import Banner from './Banner.jsx'
-import Section from './Section.jsx'
-import Footer from './Footer.jsx'
+import "./index.css";
+import App from "./App.jsx";
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Navbar />
-    <Banner />
-    <Section />
-    <Footer />
+    <App />
   </StrictMode>,
-)
+);
